@@ -1,0 +1,39 @@
+#mainSec
+{
+    background-image: url('jank.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#contain
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  transform: translate(-50%, -50%);
+}
+#dataSec
+{
+    display: none;
+}
+#showSec
+{
+    display: none;
+}
+.hidden
+{
+    display:none;
+}
+
+.inputData
+{
+    position: absolute;
+    top: 10%;
+    width: 70%;
+}
+
+.tdData
+{
+    position: relative;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+  <section id="mainSec">
+      <div class="container" id="contain">
+          <h1 class="text-center" style="color: gainsboro;font-size: 85px;">Welcome !</h1>
+        <form class="myform">
+          <div class="form-group">
+            <input type="number" class="form-control m-2" id="booksNum" placeholder="Enter number of books" min="1" required>
+            <button type="submit" class="btn btn-warning btn-lg btn-block m-2" id="btnStart">Start</button>
+          </div>
+        </form>
+      </div>
+  </section>
+  <section id="dataSec">
+   <div class="container">
+    <form id="dataForm">
+        <div class="form-group">
+            <label for="bookNum">Book Number</label>
+            <input type="text" class="form-control" id="bookNum" readonly value="1">
+        </div>
+        <div class="form-group">
+          <label for="bookName">Book Name</label>
+          <input type="text" class="form-control" id="bookName" required>
+        </div>
+        <div class="form-group">
+            <label for="price">Price</label>
+            <input type="number" class="form-control" id="price" required min="10" max="200">
+        </div>
+        <div class="form-group">
+            <label for="publishDate">Publishing Date</label>
+            <input type="date" class="form-control" id="publishDate" required>
+        </div>
+        <div class="form-group">
+            <label for="authorName">Author Name</label>
+            <input type="text" class="form-control" id="authorName" required>
+        </div>
+        <div class="form-group">
+            <label for="authorEmail">Author email address</label>
+            <input type="email" class="form-control" id="authorEmail" aria-describedby="emailHelp" required pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <button type="submit" class="btn btn-info" id="addBook">Add</button>
+        <button type="reset" class="btn btn-danger">reset</button>
+      </form>
+    </div>
+  </section>
+  <section id="showSec">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Book Name</th>
+          <th scope="col">Price</th>
+          <th scope="col">Date</th>
+          <th scope="col">Author Name </th>
+          <th scope="col">Author Email</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        
+      </tbody>
+    </table>
+  </section>  
+  <script type="module" src="main.js"></script>
+</body>
+</html>
